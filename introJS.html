@@ -1,0 +1,122 @@
+<script type="text/javascript">
+//console logging
+console.log("Console.log will allow us to verify our work in the browser's console window.");
+
+//"Primitive Data types"
+
+    //number
+      // console.log(142)
+
+      //Fraction
+      // console.log(1.53);
+
+      //scientific notation
+      // console.log(2.53e8);
+
+      //Special numbers - THEY ARE CASE SENTITIVE -
+        // console.log(Infinity > 123123412);
+        // console.log(-Infinity < -1123123);
+
+        //NaN is tricky but rarely used even according to MDN - mostly something that will be returned to you when attempting some failed arithmetic
+        // console.log(NaN == NaN) //Almost always false when compared unless negating with !=
+        // console.log(isNaN(NaN)) //Will return true.
+
+      //Arithmetic - Same orders of operation apply - PE(MD)AS
+
+          // console.log(5 + 2);
+          // console.log(1.23 * (2/10) - 1000);
+
+          //Modulo gives the remainder
+          // console.log("Want to find out if a number is even? Even numbers should be divisible by two");
+          // console.log(1234134 % 2 === 0) //If the remainder is 0, the number is even.
+
+    //string
+      // console.log("Anything wrapped in quotations (single or double) is considered a string\n Basically establishing a string as text");
+      // console.log('Single quotes work as well');
+      // console.log("Can even use 'single quotes' \ninside of double quotes");
+
+      //Concatenating
+      // console.log("Castro " + "hated " + "Black Friday.");
+
+//Unary Operators
+  // console.log(typeof 2.24 + "demonstrates use of 'typeof'");
+  // console.log(typeof "n" + "demonstrates use of 'typeof'")
+
+//Boolean - Computer Science for "yes"/"no", "on"/"off"
+  // console.log(5 < 10);
+  // console.log("my string including spaces".length < 100);
+  // console.log(("newString".length > 20) + " is false");
+
+//Binary Operators
+    //strict and loose comparison
+      // console.log(true === true && true == 1 && false == '' );
+
+      //truthy and falsy values
+      // console.log(1 + " is truthy");
+      // if ("asdf" && 1 && 123 && {} && [] && 2.23 && -12.2 && Infinity && -Infinity) {
+      //   console.log("All of the above are truthy when evaluated in a boolean context");
+      // }
+      // if (!false && !null && !undefined && !0 && !NaN && !"" && !'') {
+      //   console.log("All of the above are falsy when evaluated in a boolean context");
+      // }
+      // if (!"truthy"){
+      //   console.log("This one will not run since !'truthy' is false");
+      // }else{
+      //   console.log("This one will run since the 'else' runs when the condition is false");
+      // }
+
+
+//Logical Operators
+
+// if (false || true) {
+//   console.log("One of them was true");
+// }
+//
+// if (false || false) {
+//   console.log("Neither of them were true");
+// }
+//
+// if (true || false && false || false) {
+//   console.log("Didn't work because the conditions on both sides of the '&&' were not satisfied");
+// }
+
+//Conditional/Ternary Operator
+// console.log(true ? "Turns out to be true" : "Turns out to be false");
+
+
+
+//Non-primitive data types
+  //Array
+  // var temperatureHighs = [87, 85, 86, 91, 93, 90, 85];
+
+    //0 based indexing
+    // console.log("The first high temperature for last week was " + temperatureHighs[0]);
+    //Accessing/Writing
+
+  //Objects
+  // var myLocation = {
+  //   address1 : "123 convenient way",
+  //   address2 : "suite 1",
+  //   city : "Seattle",
+  //   state : "Washington",
+  //   zip : "98109",
+  //   googleData : {
+  //     longitude : "12735.12321",
+  //     latitude : "12435.12412"
+  //   }
+  // }
+
+  // console.log("I live in lovely " + myLocation["city"] + ".");
+
+  //Loop the loop
+    // for(var i = 0; i < temperatureHighs.length; i++){
+    //   console.log(temperatureHighs[i]);
+    // }
+
+    // for (key in myLocation) {
+    //   console.log(myLocation[key] + " is the " + key);
+    // }
+
+
+
+</script>
